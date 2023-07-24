@@ -1,0 +1,5 @@
+{"time":"2023-04-18 15:24:04","type":"error","msg":"[10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay_type' in 'field list'"}
+{"time":"2023-04-18 15:24:07","type":"error","msg":"[10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay_type' in 'field list'"}
+{"time":"2023-04-18 15:24:11","type":"error","msg":"[10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay_type' in 'field list'"}
+{"time":"2023-04-18 15:25:14","type":"error","msg":"[10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay_type' in 'field list'"}
+{"time":"2023-04-18 15:25:16","type":"error","msg":"[10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'pay_type' in 'field list'"}

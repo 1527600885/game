@@ -1,0 +1,14 @@
+{"time":"2023-07-21 08:45:44","type":"error","msg":"[0]json_decode() expects parameter 1 to be string, bool given[E:\\soft\\unggame\\app\\common.php:131]"}
+{"time":"2023-07-21 08:51:28","type":"error","msg":"[0]json_decode() expects parameter 1 to be string, bool given[E:\\soft\\unggame\\app\\common.php:131]"}
+{"time":"2023-07-21 08:54:08","type":"error","msg":"[0]json_decode() expects parameter 1 to be string, bool given[E:\\soft\\unggame\\app\\common.php:131]"}
+{"time":"2023-07-21 08:56:41","type":"error","msg":"[0]json_decode() expects parameter 1 to be string, bool given[E:\\soft\\unggame\\app\\common.php:131]"}
+{"time":"2023-07-21 08:57:24","type":"error","msg":"[0]json_decode() expects parameter 1 to be string, bool given[E:\\soft\\unggame\\app\\common.php:131]"}
+{"time":"2023-07-21 13:41:21","type":"error","msg":"[0]variable type error： boolean[E:\\soft\\unggame\\vendor\\topthink\\framework\\src\\think\\Response.php:395]"}
+{"time":"2023-07-21 13:42:43","type":"error","msg":"[0]variable type error： boolean[E:\\soft\\unggame\\vendor\\topthink\\framework\\src\\think\\Response.php:395]"}
+{"time":"2023-07-21 13:45:04","type":"error","msg":"[0]variable type error： boolean[E:\\soft\\unggame\\vendor\\topthink\\framework\\src\\think\\Response.php:395]"}
+{"time":"2023-07-21 13:50:59","type":"error","msg":"[0]variable type error： boolean[E:\\soft\\unggame\\vendor\\topthink\\framework\\src\\think\\Response.php:395]"}
+{"time":"2023-07-21 13:52:46","type":"error","msg":"[0]variable type error： boolean[E:\\soft\\unggame\\vendor\\topthink\\framework\\src\\think\\Response.php:395]"}
+{"time":"2023-07-21 17:00:05","type":"error","msg":"[2]explode() expects parameter 2 to be string, array given[E:\\soft\\unggame\\app\\api\\controller\\Player.php:44]"}
+{"time":"2023-07-21 17:01:00","type":"error","msg":"[2]explode() expects parameter 2 to be string, array given[E:\\soft\\unggame\\app\\api\\controller\\Player.php:44]"}
+{"time":"2023-07-21 17:01:49","type":"error","msg":"[2]explode() expects parameter 2 to be string, array given[E:\\soft\\unggame\\app\\api\\controller\\Player.php:44]"}
+{"time":"2023-07-21 17:31:31","type":"error","msg":"[10501]SQLSTATE[HY000]: General error: 1366 Incorrect integer value: 'AT01' for column 'gid' at row 1[E:\\soft\\unggame\\vendor\\topthink\\think-orm\\src\\db\\PDOConnection.php:797]"}

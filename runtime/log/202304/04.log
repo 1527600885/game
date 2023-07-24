@@ -1,0 +1,8 @@
+{"time":"2023-04-04 09:08:53","type":"error","msg":"[0]syntax error, unexpected '}'"}
+{"time":"2023-04-04 12:08:16","type":"error","msg":"[0]Class name must be a valid object or a string"}
+{"time":"2023-04-04 12:08:58","type":"error","msg":"[0]syntax error, unexpected '('"}
+{"time":"2023-04-04 12:09:48","type":"error","msg":"[0]Class name must be a valid object or a string"}
+{"time":"2023-04-04 12:10:36","type":"error","msg":"[0]Class 'BoardGame' not found"}
+{"time":"2023-04-04 12:11:02","type":"error","msg":"[0]Too few arguments to function app\\common\\lib\\GameBaseService::level(), 0 passed in E:\\project\\unggame\\app\\common\\lib\\GameBaseService.php on line 65 and exactly 1 expected"}
+{"time":"2023-04-04 12:12:01","type":"error","msg":"[10501]SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value"}
+{"time":"2023-04-04 12:12:59","type":"error","msg":"[10501]SQLSTATE[HY000]: General error: 1364 Field 'id' doesn't have a default value"}

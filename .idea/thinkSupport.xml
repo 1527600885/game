@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ThinkSupport">
+    <option name="hasInterpreter" value="true" />
+    <option name="pluginEnabled" value="true" />
+    <option name="tp" value="true" />
+    <option name="tpVersion" value="Composer detected issues in your platform:&#10;&#10;Your Composer dependencies require a PHP version &quot;&gt;= 7.4.0&quot;. You are running 7.3.4" />
+  </component>
+</project>

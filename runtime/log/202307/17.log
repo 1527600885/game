@@ -1,0 +1,8 @@
+{"time":"2023-07-17 08:32:37","type":"error","msg":"[10501]SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1689553956' for column 'login_time' at row 1[E:\\soft\\unggame\\vendor\\topthink\\think-orm\\src\\db\\PDOConnection.php:797]"}
+{"time":"2023-07-17 08:36:28","type":"error","msg":"[10501]SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1689554188' for column 'login_time' at row 1[E:\\soft\\unggame\\vendor\\topthink\\think-orm\\src\\db\\PDOConnection.php:797]"}
+{"time":"2023-07-17 08:38:28","type":"error","msg":"[10501]SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1689554308' for column 'login_time' at row 1[E:\\soft\\unggame\\vendor\\topthink\\think-orm\\src\\db\\PDOConnection.php:797]"}
+{"time":"2023-07-17 09:13:17","type":"error","msg":"[8]Trying to access array offset on value of type null[E:\\soft\\unggame\\app\\api\\model\\v2\\GameList.php:16]"}
+{"time":"2023-07-17 09:17:48","type":"error","msg":"[8]Trying to access array offset on value of type null[E:\\soft\\unggame\\app\\api\\model\\v2\\GameList.php:16]"}
+{"time":"2023-07-17 09:19:11","type":"error","msg":"[8]Undefined index: gameName[E:\\soft\\unggame\\app\\api\\model\\v2\\GameList.php:14]"}
+{"time":"2023-07-17 09:21:12","type":"error","msg":"[8]Trying to access array offset on value of type null[E:\\soft\\unggame\\app\\api\\model\\v2\\GameList.php:16]"}
+{"time":"2023-07-17 17:55:38","type":"error","msg":"[8]Undefined index: account[E:\\soft\\unggame\\app\\api\\controller\\Player.php:63]"}

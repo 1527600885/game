@@ -1,0 +1,17 @@
+{"time":"2023-04-01 11:23:51","type":"error","msg":"[8]Undefined index: "}
+{"time":"2023-04-01 11:26:32","type":"error","msg":"[8]Undefined index: "}
+{"time":"2023-04-01 11:28:07","type":"error","msg":"[8]Undefined index: "}
+{"time":"2023-04-01 11:38:10","type":"error","msg":"[10501]SQLSTATE[HY000] [1045] Access denied for user 'im_unggame_com'@'localhost' (using password: YES)"}
+{"time":"2023-04-01 11:44:51","type":"error","msg":"[2]pow() expects exactly 2 parameters, 1 given"}
+{"time":"2023-04-01 14:19:24","type":"error","msg":"[10501]SQLSTATE[HY000] [1045] Access denied for user 'im_unggame_com'@'localhost' (using password: YES)"}
+{"time":"2023-04-01 14:30:32","type":"error","msg":"[10501]SQLSTATE[HY000] [1045] Access denied for user 'im_unggame_com'@'localhost' (using password: YES)"}
+{"time":"2023-04-01 14:32:09","type":"error","msg":"[10501]SQLSTATE[HY000] [1045] Access denied for user 'im_unggame_com'@'localhost' (using password: YES)"}
+{"time":"2023-04-01 14:41:48","type":"error","msg":"[8]Undefined index: times"}
+{"time":"2023-04-01 14:43:23","type":"error","msg":"[0]Call to a member function toArray() on array"}
+{"time":"2023-04-01 14:44:21","type":"error","msg":"[8]Undefined index: "}
+{"time":"2023-04-01 14:47:38","type":"error","msg":"[8]Undefined index: "}
+{"time":"2023-04-01 14:48:39","type":"error","msg":"[8]Undefined index: "}
+{"time":"2023-04-01 14:49:12","type":"error","msg":"[8]Undefined index: "}
+{"time":"2023-04-01 15:37:34","type":"error","msg":"[10501]SQLSTATE[HY000] [1045] Access denied for user 'im_unggame_com'@'localhost' (using password: YES)"}
+{"time":"2023-04-01 16:07:04","type":"error","msg":"[10501]SQLSTATE[HY000] [1045] Access denied for user 'im_unggame_com'@'localhost' (using password: YES)"}
+{"time":"2023-04-01 16:58:37","type":"error","msg":"[8]Undefined variable: bet2"}

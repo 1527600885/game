@@ -1,0 +1,24 @@
+{"time":"2023-07-13 09:23:17","type":"error","msg":"[10501]SQLSTATE[HY000] [2002] 由于目标计算机积极拒绝，无法连接。\r\n[E:\\soft\\unggame\\vendor\\topthink\\think-orm\\src\\db\\PDOConnection.php:797]"}
+{"time":"2023-07-13 10:02:03","type":"error","msg":"[8]Undefined index: title[E:\\soft\\unggame\\app\\admin\\middleware\\AuthCheck.php:119]"}
+{"time":"2023-07-13 10:02:15","type":"error","msg":"[8]Undefined index: title[E:\\soft\\unggame\\app\\admin\\middleware\\AuthCheck.php:119]"}
+{"time":"2023-07-13 10:02:16","type":"error","msg":"[8]Undefined index: title[E:\\soft\\unggame\\app\\admin\\middleware\\AuthCheck.php:119]"}
+{"time":"2023-07-13 10:02:37","type":"error","msg":"[8]Undefined index: title[E:\\soft\\unggame\\app\\admin\\middleware\\AuthCheck.php:119]"}
+{"time":"2023-07-13 10:02:57","type":"error","msg":"[8]Undefined index: title[E:\\soft\\unggame\\app\\admin\\middleware\\AuthCheck.php:119]"}
+{"time":"2023-07-13 10:04:23","type":"error","msg":"[8]Undefined index: title[E:\\soft\\unggame\\app\\admin\\middleware\\AuthCheck.php:119]"}
+{"time":"2023-07-13 10:11:51","type":"error","msg":"[8]Undefined index: title[E:\\soft\\unggame\\app\\admin\\middleware\\AuthCheck.php:122]"}
+{"time":"2023-07-13 10:12:13","type":"error","msg":"[8]Undefined index: title[E:\\soft\\unggame\\app\\admin\\middleware\\AuthCheck.php:122]"}
+{"time":"2023-07-13 10:12:18","type":"error","msg":"[8]Undefined index: title[E:\\soft\\unggame\\app\\admin\\middleware\\AuthCheck.php:122]"}
+{"time":"2023-07-13 10:12:21","type":"error","msg":"[8]Undefined index: title[E:\\soft\\unggame\\app\\admin\\middleware\\AuthCheck.php:122]"}
+{"time":"2023-07-13 10:12:34","type":"error","msg":"[8]Undefined index: title[E:\\soft\\unggame\\app\\admin\\middleware\\AuthCheck.php:122]"}
+{"time":"2023-07-13 10:25:43","type":"error","msg":"[8]Undefined index: title[E:\\soft\\unggame\\app\\admin\\middleware\\AuthCheck.php:122]"}
+{"time":"2023-07-13 10:27:25","type":"error","msg":"[8]Undefined index: title[E:\\soft\\unggame\\app\\admin\\middleware\\AuthCheck.php:122]"}
+{"time":"2023-07-13 10:28:20","type":"error","msg":"[8]Undefined index: title[E:\\soft\\unggame\\app\\admin\\middleware\\AuthCheck.php:122]"}
+{"time":"2023-07-13 10:30:33","type":"error","msg":"[8]Undefined index: title[E:\\soft\\unggame\\app\\admin\\middleware\\AuthCheck.php:122]"}
+{"time":"2023-07-13 11:44:27","type":"error","msg":"[2]include(E:\\soft\\unggame\\public\\plugins/share/menu.php): failed to open stream: No such file or directory[E:\\soft\\unggame\\app\\admin\\controller\\AdminMenu.php:69]"}
+{"time":"2023-07-13 11:44:32","type":"error","msg":"[2]include(E:\\soft\\unggame\\public\\plugins/share/menu.php): failed to open stream: No such file or directory[E:\\soft\\unggame\\app\\admin\\controller\\AdminMenu.php:69]"}
+{"time":"2023-07-13 11:44:36","type":"error","msg":"[2]include(E:\\soft\\unggame\\public\\plugins/share/menu.php): failed to open stream: No such file or directory[E:\\soft\\unggame\\app\\admin\\controller\\AdminMenu.php:69]"}
+{"time":"2023-07-13 11:47:19","type":"error","msg":"[2]include(E:\\soft\\unggame\\public\\plugins/share/menu.php): failed to open stream: No such file or directory[E:\\soft\\unggame\\app\\admin\\controller\\AdminMenu.php:69]"}
+{"time":"2023-07-13 12:00:22","type":"error","msg":"[2]include(E:\\soft\\unggame\\public\\plugins/share/menu.php): failed to open stream: No such file or directory[E:\\soft\\unggame\\app\\admin\\controller\\AdminMenu.php:69]"}
+{"time":"2023-07-13 15:07:46","type":"error","msg":"[0]Error executing \"PutObject\" on \"https://unggame.s3.amazonaws.com/upload/qrcode/20230713/1356pkqbrp.png\"; AWS HTTP error: cURL error 60: SSL certificate problem: unable to get local issuer certificate (see https://curl.haxx.se/libcurl/c/libcurl-errors.html)[E:\\soft\\unggame\\extend\\Aws\\Aws\\WrappedHttpHandler.php:195]"}
+{"time":"2023-07-13 16:42:10","type":"error","msg":"[8]Undefined index: invitation_code[E:\\soft\\unggame\\app\\api\\controller\\Login.php:321]"}
+{"time":"2023-07-13 17:53:06","type":"error","msg":"[0]template not exists:E:\\soft\\unggame\\app\\admin\\view\\mk_gamebrand\\index.html[E:\\soft\\unggame\\vendor\\topthink\\think-view\\src\\Think.php:146]"}

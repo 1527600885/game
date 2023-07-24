@@ -1,0 +1,7 @@
+{"time":"2023-07-18 08:53:23","type":"error","msg":"[10501]SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1689641603' for column 'login_time' at row 1[E:\\soft\\unggame\\vendor\\topthink\\think-orm\\src\\db\\PDOConnection.php:797]"}
+{"time":"2023-07-18 08:53:36","type":"error","msg":"[10501]SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1689641616' for column 'login_time' at row 1[E:\\soft\\unggame\\vendor\\topthink\\think-orm\\src\\db\\PDOConnection.php:797]"}
+{"time":"2023-07-18 08:53:36","type":"error","msg":"[10501]SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1689641616' for column 'login_time' at row 1[E:\\soft\\unggame\\vendor\\topthink\\think-orm\\src\\db\\PDOConnection.php:797]"}
+{"time":"2023-07-18 13:58:40","type":"error","msg":"[8]Undefined index: gameName[E:\\soft\\unggame\\app\\admin\\controller\\MkGamelist.php:104]"}
+{"time":"2023-07-18 13:58:55","type":"error","msg":"[8]Undefined index: gameName[E:\\soft\\unggame\\app\\admin\\controller\\MkGamelist.php:104]"}
+{"time":"2023-07-18 13:59:01","type":"error","msg":"[8]Undefined index: gameName[E:\\soft\\unggame\\app\\admin\\controller\\MkGamelist.php:104]"}
+{"time":"2023-07-18 14:25:17","type":"error","msg":"[10501]SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1689661517' for column 'login_time' at row 1[E:\\soft\\unggame\\vendor\\topthink\\think-orm\\src\\db\\PDOConnection.php:797]"}

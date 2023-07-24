@@ -1,0 +1,22 @@
+{"time":"2023-07-20 09:31:38","type":"error","msg":"[0]json_decode() expects parameter 1 to be string, bool given[E:\\soft\\unggame\\app\\common.php:131]"}
+{"time":"2023-07-20 09:39:03","type":"error","msg":"[0]json_decode() expects parameter 1 to be string, bool given[E:\\soft\\unggame\\app\\common.php:131]"}
+{"time":"2023-07-20 09:44:35","type":"error","msg":"[0]json_decode() expects parameter 1 to be string, bool given[E:\\soft\\unggame\\app\\common.php:131]"}
+{"time":"2023-07-20 09:46:06","type":"error","msg":"[0]json_decode() expects parameter 1 to be string, bool given[E:\\soft\\unggame\\app\\common.php:131]"}
+{"time":"2023-07-20 09:48:11","type":"error","msg":"[0]json_decode() expects parameter 1 to be string, bool given[E:\\soft\\unggame\\app\\common.php:131]"}
+{"time":"2023-07-20 09:57:22","type":"error","msg":"[0]json_decode() expects parameter 1 to be string, bool given[E:\\soft\\unggame\\app\\common.php:131]"}
+{"time":"2023-07-20 09:59:03","type":"error","msg":"[0]json_decode() expects parameter 1 to be string, bool given[E:\\soft\\unggame\\app\\common.php:131]"}
+{"time":"2023-07-20 13:37:38","type":"error","msg":"[2]Declaration of app\\api\\controller\\Player::error() should be compatible with app\\api\\BaseController::error($msg = '', $data = NULL, $code = 0, $type = NULL, array $header = Array)[E:\\soft\\unggame\\app\\api\\controller\\Player.php:24]"}
+{"time":"2023-07-20 13:41:17","type":"error","msg":"[10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'mtcode' in 'where clause'[E:\\soft\\unggame\\vendor\\topthink\\think-orm\\src\\db\\PDOConnection.php:797]"}
+{"time":"2023-07-20 13:59:01","type":"error","msg":"[8]Trying to access array offset on value of type null[E:\\soft\\unggame\\app\\api\\controller\\Player.php:138]"}
+{"time":"2023-07-20 14:01:39","type":"error","msg":"[8]Trying to access array offset on value of type null[E:\\soft\\unggame\\app\\api\\controller\\Player.php:138]"}
+{"time":"2023-07-20 14:04:05","type":"error","msg":"[8]Trying to access array offset on value of type null[E:\\soft\\unggame\\app\\api\\controller\\Player.php:138]"}
+{"time":"2023-07-20 14:25:44","type":"error","msg":"[8]Undefined index: mtcode[E:\\soft\\unggame\\app\\api\\controller\\Player.php:138]"}
+{"time":"2023-07-20 15:03:58","type":"error","msg":"[8]Undefined index: account[E:\\soft\\unggame\\app\\api\\controller\\Player.php:430]"}
+{"time":"2023-07-20 15:29:58","type":"error","msg":"[8]Undefined index: account[E:\\soft\\unggame\\app\\api\\controller\\Player.php:100]"}
+{"time":"2023-07-20 15:32:59","type":"error","msg":"[8]Undefined index: account[E:\\soft\\unggame\\app\\api\\controller\\Player.php:99]"}
+{"time":"2023-07-20 18:02:06","type":"error","msg":"[2]preg_match(): No ending delimiter '^' found[E:\\soft\\unggame\\app\\api\\controller\\Player.php:42]"}
+{"time":"2023-07-20 18:07:39","type":"error","msg":"[2]preg_match(): No ending delimiter '/' found[E:\\soft\\unggame\\app\\api\\controller\\Player.php:42]"}
+{"time":"2023-07-20 18:32:41","type":"error","msg":"[0]Class 'app\\api\\controller\\DateTime' not found[E:\\soft\\unggame\\app\\api\\controller\\Player.php:40]"}
+{"time":"2023-07-20 18:32:58","type":"error","msg":"[0]Class 'app\\api\\controller\\DateTime' not found[E:\\soft\\unggame\\app\\api\\controller\\Player.php:40]"}
+{"time":"2023-07-20 18:34:05","type":"error","msg":"[0]Class 'app\\api\\controller\\DateTime' not found[E:\\soft\\unggame\\app\\api\\controller\\Player.php:41]"}
+{"time":"2023-07-20 18:36:43","type":"error","msg":"[0]Class 'app\\api\\controller\\DateTime' not found[E:\\soft\\unggame\\app\\api\\controller\\Player.php:41]"}

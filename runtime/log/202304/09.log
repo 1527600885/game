@@ -1,0 +1,10 @@
+{"time":"2023-04-09 11:49:39","type":"error","msg":"[2]Illegal string offset 'country'"}
+{"time":"2023-04-09 11:50:22","type":"error","msg":"[2]Illegal string offset 'country'"}
+{"time":"2023-04-09 11:52:26","type":"error","msg":"[2]Illegal string offset 'country'"}
+{"time":"2023-04-09 12:07:30","type":"error","msg":"[8]Undefined variable: invite_uid"}
+{"time":"2023-04-09 12:08:21","type":"error","msg":"[8]Undefined variable: invite_data"}
+{"time":"2023-04-09 12:09:29","type":"error","msg":"[0]syntax error, unexpected 'public' (T_PUBLIC), expecting end of file"}
+{"time":"2023-04-09 12:10:02","type":"error","msg":"[8]Trying to access array offset on value of type null"}
+{"time":"2023-04-09 12:11:09","type":"error","msg":"[8]Trying to access array offset on value of type null"}
+{"time":"2023-04-09 12:11:40","type":"error","msg":"[8]Trying to access array offset on value of type null"}
+{"time":"2023-04-09 12:12:04","type":"error","msg":"[8]Trying to access array offset on value of type null"}

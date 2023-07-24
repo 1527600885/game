@@ -1,0 +1,20 @@
+{"time":"2023-04-08 09:32:30","type":"error","msg":"[0]Call to a member function getOriginalExtension() on null"}
+{"time":"2023-04-08 16:06:53","type":"error","msg":"[0]Argument 2 passed to think\\response\\View::__construct() must be an instance of think\\View, instance of onekey\\ThinkView given"}
+{"time":"2023-04-08 16:07:09","type":"error","msg":"[0]Argument 2 passed to think\\response\\View::__construct() must be an instance of think\\View, instance of onekey\\ThinkView given"}
+{"time":"2023-04-08 16:18:15","type":"error","msg":"[0]Argument 1 passed to think\\db\\BaseQuery::append() must be of the type array, string given, called in E:\\project\\unggame\\public\\plugins\\announcement\\admin\\controller\\MkAnnouncement.php on line 29"}
+{"time":"2023-04-08 16:34:02","type":"error","msg":"[10501]SQLSTATE[01000]: Warning: 1265 Data truncated for column 'create_time' at row 1"}
+{"time":"2023-04-08 16:34:09","type":"error","msg":"[10501]SQLSTATE[01000]: Warning: 1265 Data truncated for column 'create_time' at row 1"}
+{"time":"2023-04-08 16:34:29","type":"error","msg":"[10501]SQLSTATE[01000]: Warning: 1265 Data truncated for column 'create_time' at row 1"}
+{"time":"2023-04-08 16:37:10","type":"error","msg":"[10500]bind attr has exists:user_id"}
+{"time":"2023-04-08 17:10:12","type":"error","msg":"[8]Undefined variable: map"}
+{"time":"2023-04-08 17:10:17","type":"error","msg":"[8]Undefined variable: map"}
+{"time":"2023-04-08 17:10:18","type":"error","msg":"[8]Undefined variable: map"}
+{"time":"2023-04-08 17:11:57","type":"error","msg":"[10501]SQLSTATE[HY000]: General error: 1366 Incorrect integer value: 'loler' for column 'user_id' at row 1"}
+{"time":"2023-04-08 17:15:15","type":"error","msg":"[10501]SQLSTATE[HY000]: General error: 1366 Incorrect integer value: 'loler' for column 'user_id' at row 1"}
+{"time":"2023-04-08 17:22:08","type":"error","msg":"[10501]SQLSTATE[HY000]: General error: 1366 Incorrect integer value: 'loler' for column 'user_id' at row 1"}
+{"time":"2023-04-08 17:23:17","type":"error","msg":"[10501]SQLSTATE[HY000]: General error: 1366 Incorrect integer value: 'loler' for column 'user_id' at row 1"}
+{"time":"2023-04-08 17:29:57","type":"error","msg":"[10501]SQLSTATE[HY000]: General error: 1366 Incorrect integer value: 'qzalqp' for column 'user_id' at row 1"}
+{"time":"2023-04-08 17:30:24","type":"error","msg":"[10501]SQLSTATE[HY000]: General error: 1366 Incorrect integer value: 'wseem' for column 'user_id' at row 1"}
+{"time":"2023-04-08 17:31:04","type":"error","msg":"[0]Argument 2 passed to think\\response\\View::__construct() must be an instance of think\\View, instance of onekey\\ThinkView given"}
+{"time":"2023-04-08 17:31:18","type":"error","msg":"[0]Argument 2 passed to think\\response\\View::__construct() must be an instance of think\\View, instance of onekey\\ThinkView given"}
+{"time":"2023-04-08 17:36:29","type":"error","msg":"[2]array_merge(): Expected parameter 2 to be an array, object given"}

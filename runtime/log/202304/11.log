@@ -1,0 +1,1 @@
+{"time":"2023-04-11 21:16:22","type":"error","msg":"[0]Too few arguments to function think\\db\\BaseQuery::column(), 0 passed and at least 1 expected"}

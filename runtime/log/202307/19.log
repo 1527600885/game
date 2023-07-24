@@ -1,0 +1,13 @@
+{"time":"2023-07-19 08:48:29","type":"error","msg":"[10501]SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1689727709' for column 'login_time' at row 1[E:\\soft\\unggame\\vendor\\topthink\\think-orm\\src\\db\\PDOConnection.php:797]"}
+{"time":"2023-07-19 08:48:29","type":"error","msg":"[10501]SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1689727709' for column 'login_time' at row 1[E:\\soft\\unggame\\vendor\\topthink\\think-orm\\src\\db\\PDOConnection.php:797]"}
+{"time":"2023-07-19 08:48:29","type":"error","msg":"[10501]SQLSTATE[22007]: Invalid datetime format: 1292 Incorrect datetime value: '1689727709' for column 'login_time' at row 1[E:\\soft\\unggame\\vendor\\topthink\\think-orm\\src\\db\\PDOConnection.php:797]"}
+{"time":"2023-07-19 08:54:07","type":"error","msg":"[8]Undefined index: uncode[E:\\soft\\unggame\\app\\api\\controller\\Login.php:224]"}
+{"time":"2023-07-19 08:56:56","type":"error","msg":"[8]Undefined index: uncode[E:\\soft\\unggame\\app\\api\\controller\\Login.php:224]"}
+{"time":"2023-07-19 13:52:13","type":"error","msg":"[8]Undefined index: uncode[E:\\soft\\unggame\\app\\api\\controller\\Login.php:224]"}
+{"time":"2023-07-19 15:08:14","type":"error","msg":"[0]var_dump() expects at least 1 parameter, 0 given[E:\\soft\\unggame\\app\\common\\game\\ApiGame.php:165]"}
+{"time":"2023-07-19 15:10:15","type":"error","msg":"[2]file_get_contents(https://api.cqgame.games/gameboy): failed to open stream: HTTP request failed! HTTP/1.1 404 Not Found\r\n[E:\\soft\\unggame\\app\\common\\game\\ApiGame.php:184]"}
+{"time":"2023-07-19 15:44:59","type":"error","msg":"[0]Cannot use object of type stdClass as array[E:\\soft\\unggame\\app\\api\\controller\\v4\\Game.php:34]"}
+{"time":"2023-07-19 15:45:21","type":"error","msg":"[0]Cannot use object of type think\\response\\Json as array[E:\\soft\\unggame\\app\\api\\controller\\v4\\Game.php:34]"}
+{"time":"2023-07-19 15:49:19","type":"error","msg":"[0]Cannot use object of type stdClass as array[E:\\soft\\unggame\\app\\api\\controller\\v4\\Game.php:34]"}
+{"time":"2023-07-19 15:49:38","type":"error","msg":"[0]Cannot use object of type stdClass as array[E:\\soft\\unggame\\app\\api\\controller\\v4\\Game.php:34]"}
+{"time":"2023-07-19 16:27:46","type":"error","msg":"[10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'productCode' in 'where clause'[E:\\soft\\unggame\\vendor\\topthink\\think-orm\\src\\db\\PDOConnection.php:797]"}

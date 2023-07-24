@@ -1,0 +1,8 @@
+{"time":"2023-04-03 16:21:24","type":"error","msg":"[0]Argument 2 passed to think\\response\\View::__construct() must be an instance of think\\View, instance of onekey\\ThinkView given"}
+{"time":"2023-04-03 16:26:55","type":"error","msg":"[0]Argument 2 passed to think\\response\\View::__construct() must be an instance of think\\View, instance of onekey\\ThinkView given"}
+{"time":"2023-04-03 16:27:26","type":"error","msg":"[0]Argument 2 passed to think\\response\\View::__construct() must be an instance of think\\View, instance of onekey\\ThinkView given"}
+{"time":"2023-04-03 16:27:29","type":"error","msg":"[0]Argument 2 passed to think\\response\\View::__construct() must be an instance of think\\View, instance of onekey\\ThinkView given"}
+{"time":"2023-04-03 16:30:19","type":"error","msg":"[10501]SQLSTATE[HY000] [1045] Access denied for user 'im_unggame_com'@'localhost' (using password: YES)"}
+{"time":"2023-04-03 16:30:36","type":"error","msg":"[10501]SQLSTATE[HY000] [1045] Access denied for user 'im_unggame_com'@'localhost' (using password: YES)"}
+{"time":"2023-04-03 16:35:34","type":"error","msg":"[10501]SQLSTATE[HY000] [1045] Access denied for user 'im_unggame_com'@'localhost' (using password: YES)"}
+{"time":"2023-04-03 16:36:03","type":"error","msg":"[10501]SQLSTATE[HY000] [1045] Access denied for user 'im_unggame_com'@'localhost' (using password: YES)"}

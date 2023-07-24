@@ -1,0 +1,374 @@
+<?php /*a:3:{s:49:"E:\project\unggame\app\admin\view\user\index.html";i:1686881871;s:52:"E:\project\unggame\app\admin\view\common\header.html";i:1673339169;s:52:"E:\project\unggame\app\admin\view\common\footer.html";i:1672902372;}*/ ?>
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="content-type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<title>游戏后台管理系统</title>
+<link rel="icon" href="/upload/favicon.ico"> 
+<link rel="stylesheet" type="text/css" href="/admin/css/element.min.css?v=<?php echo config('app.version'); ?>">
+<link rel="stylesheet" type="text/css" href="/admin/css/onekey.min.css?v=<?php echo config('app.version'); ?>">
+<link rel="stylesheet" type="text/css" href="/admin/layui/css/layui.css?v=<?php echo config('app.version'); ?>">
+<script type="text/javascript" src="/admin/js/jquery.min.js?v=<?php echo config('app.version'); ?>"></script>
+<script type="text/javascript" src="/admin/js/vue.min.js?v=<?php echo config('app.version'); ?>"></script>
+<script type="text/javascript" src="/admin/js/element.min.js?v=<?php echo config('app.version'); ?>"></script>
+<script type="text/javascript" src="/admin/js/sortable.min.js?v=<?php echo config('app.version'); ?>"></script>
+<script type="text/javascript" src="/admin/js/vuedraggable.min.js?v=<?php echo config('app.version'); ?>"></script>
+<script type="text/javascript" src="/admin/js/common.js?v=<?php echo config('app.version'); ?>"></script>
+<script type="text/javascript" src="/admin/js/component.js?v=<?php echo config('app.version'); ?>"></script>
+<script type="text/javascript" src="/admin/js/nprogress.js?v=<?php echo config('app.version'); ?>"></script>
+<script type="text/javascript" src="/admin/layui/layui.js?v=<?php echo config('app.version'); ?>"></script>
+</head>
+<body>
+<div id="app" v-cloak>
+    <el-curd
+            index-url="user/index?invite_one_uid=<?php echo input('param.invite_one_uid',0); ?>&invite_two_uid=<?php echo input('param.invite_two_uid',0); ?>&invite_three_uid=<?php echo input('param.invite_three_uid',0); ?>&invite_uid=<?php echo input('param.invite_uid',0); ?>"
+        :field="field"
+        :search-date="false"
+        :table-operation-width="0"
+        :table-sort="{prop: 'create_time', order: 'desc'}"
+        :search-status="[{label: '正常', value: 1}, {label: '屏蔽', value: 0}]"
+        variable="userInfo" @one-key-data="oneKeyData($event)"
+            ref="el_curd"
+        preview>
+        <?php if($invite_one_uid || isset($invite_uid)): ?>
+            <template v-slot:button>
+                <el-button type="info" icon="el-icon-back" onclick="history.back()">返回</el-button>
+            </template>
+            <template  v-slot:search>
+                <el-button type="text">
+                    <span>团队总人数<span style="color: red"><?php echo htmlentities($invite_data['invite_one_num']+$invite_data['invite_two_num']+$invite_data['invite_one_num']); ?></span>人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span>一级邀请<span style="color: red"><?php echo htmlentities($invite_data['invite_one_num']); ?></span>人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span>二级邀请<span style="color: red"><?php echo htmlentities($invite_data['invite_two_num']); ?></span>人&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span>
+                    <span>三级邀请<span style="color: red"><?php echo htmlentities($invite_data['invite_three_num']); ?></span>人</span>
+                </el-button>
+            </template>
+<!--            <template  v-slot:search>-->
+<!--                <el-button type="text">二级邀请<span style="color: red"><?php echo htmlentities($invite_data['invite_two_num']); ?></span>人</el-button>-->
+<!--            </template>-->
+<!--            <template  v-slot:row>-->
+<!--                <el-button type="text">三级邀请<span style="color: red"><?php echo htmlentities($invite_data['invite_three_num']); ?></span>人</el-button>-->
+<!--            </template>-->
+        <?php endif; ?>
+    </el-curd>
+    <el-dialog
+            title="账户"
+            :visible.sync="dialogVisible"
+            width="30%"
+            :before-close="handleClose">
+        <el-form ref="formRef" :model="form" label-width="80px">
+            <el-form-item label="账单记录">
+                <a :href="cptlog" style="color: #0000FF">查看</a>
+            </el-form-item>
+            <el-form-item label="修改类型">
+                <el-radio-group v-model="form.money_type" @change="chooseMoneyType()">
+                    <el-radio label="1" >充值</el-radio>
+                    <el-radio label="2" >扣除</el-radio>
+                </el-radio-group>
+            </el-form-item>
+            <el-form-item label="资金种类">
+                <el-select v-model="form.type" :placeholder="amountArr[form.money_type].tip">
+                    <el-option  v-for="(item,index) in amountArr[form.money_type].option" :label="item" :value="index"></el-option>
+                </el-select>
+            </el-form-item>
+            <el-form-item label="金额">
+                <el-input v-model="form.amount" type="number" placeholder="请填写金额"></el-input>
+            </el-form-item>
+            <el-form-item>
+                <el-button type="primary" @click="onSubmit">确认</el-button>
+                <el-button  @click="closeForm()">取消</el-button>
+            </el-form-item>
+        </el-form>
+    </el-dialog>
+</div>
+<script>
+
+    const app  = new Vue({
+        el: '#app',
+        data() {
+            return {
+                operation_id:0,
+                cptlog:"",
+                form:{
+                    money_type: "1",
+                    type: "",
+                    amount:0,
+                },
+                amountArr:{
+                    1: {
+                        option:{
+                            5: "邀请注册奖励",
+                            6:"好友充值奖励",
+                            7:"管理员后台添加",
+                            3:"游戏奖励"
+                        },
+                        tip:"请选择充值类型",
+                    },
+                    2:{
+                        option:{
+                            2:  "提现",
+                            3:"游戏扣除"
+                        },
+                        tip:"请选择扣除类型"
+                    }
+                },
+                count: 0,
+                dialogVisible:false,
+                field: [
+                    {
+                        label: '编号',
+                        prop: 'id',
+                        table: false,
+                    },
+                    {
+                        prop: 'cover',
+                        label: '头像',
+                        table: {label: '资料',width: '70px'},
+                        form: {is: 'el-file-select',type: 'image'},
+                    },
+                    {
+                        prop: 'email',
+                        label: '邮箱',
+                        table: {label: '', bind: ['mobile','game_account'], width: '250px'},
+                        form: {
+                            rules: [
+                                {required: true, message: '邮箱不能为空'},
+                            ],
+                            colMd: 12
+                        },
+                    },
+                    {
+                        prop: 'mobile',
+                        label: '手机',
+                        table: false,
+                        form: {colMd: 12}
+                    },
+					{
+					    prop: 'whatsapp',
+					    label: 'WhatsApp',
+					    table: {sort: false},
+					    form: {colMd: 12}
+					},
+					{
+					    prop: 'telegram',
+					    label: 'Telegram',
+					    table: false,
+					    form: {colMd: 12}
+					},
+					{
+					    prop: 'line',
+					    label: 'Line',
+					    table:false,
+					    form: {colMd: 12}
+					},
+                    {
+                        prop: 'nickname',
+                        label: '昵称',
+                        table:  {sort: false},
+                        form: {
+                            rules: [
+                                {required: true, message: '昵称不能为空'},
+                            ],
+                            colMd: 12
+                        },
+                    },
+                    {
+                        prop: 'UNG',
+                        label: 'UNG数量',
+                        table:  {sort: false},
+                    },
+                    {
+                        prop: 'login_ip',
+                        label: 'IP',
+                        table:{bind: ['country','province','city']},
+                        form: false,
+                    },
+                    {
+                        prop: 'login_count',
+                        label: '登录次数',
+                        table:{sort: true},
+                        form: false,
+                    },
+                    {
+                        prop: 'balance',
+                        label: '余额',
+                        table:{sort: true},
+                        form: {type: 'number',default: 0.00,colMd: 12}
+                    },
+                    {
+                        prop: 'invite_name',
+                        label: '邀请人',
+                        table:{sort: false},
+                    },
+                    {
+                        prop: 'invite_one_num',
+                        label: '邀请人数',
+                        table:{sort: true},
+                    },
+                    {
+                        prop: 'invite_two_num',
+                        label: '二级邀请人数',
+                        table:{sort: true},
+                    },
+                    {
+                        prop: 'invite_three_num',
+                        label: '三级邀请人数',
+                        table:{sort: true},
+                    },
+                    {
+                        prop: 'capital_log',
+                        label: '账单记录',
+                        table:false,
+                    },
+                    {
+                        prop: 'win_rate',
+                        label: '赔率',
+                        table:{
+                            is: 'el-input2'
+                        },
+                    },
+                    {
+                        prop: 'res_win_min',
+                        label: '支线最小倍数',
+                        table:{
+                            is: 'el-input2'
+                        },
+                    },
+                    {
+                        prop: 'res_win_max',
+                        label: '支线最大倍数',
+                        table:{
+                            is: 'el-input2'
+                        },
+                    },
+                    {
+                        prop: 'password',
+                        label: '密码',
+                        table: false,
+                        form: {
+                            type: 'password',
+                            placeholder: '不修改密码则此处为空',
+                            rules: [
+                                {saveRequired: true, message: '新增用户时，密码不能为空'},
+                                {pattern: /^[^\u4e00-\u9fa5]+$/, message: '不能包含中文字符'}
+                            ],
+                            colMd: 12
+                        },
+                    },
+                    {
+                        prop: 'now_integral',
+                        label: '积分',
+                        table:false,
+                        form: {type: 'number',default: 0,colMd: 12}
+                    },
+                    {
+                        prop: 'group_id',
+                        label: '分组',
+                        // table: {prop: 'group_title', sort: true},
+                        table:false,
+                        form: {
+                            is: 'el-select',
+                            child: {is: 'el-option',value: <?php echo json_encode($group); ?>, props:{label: 'title', value: 'id'}},
+                            rules: [
+                                {required: true, message: '请选择组别'},
+                            ],
+                            colMd: 12
+                        },
+                    },
+                    {
+                        prop: 'sex',
+                        label: '性别',
+                        table: false,
+                        form: {
+                            is: 'el-select',
+                            default: 0,
+                            child: {is: 'el-option', value:[{label:'男', value:0},{label:'女',value:1}]},
+                            colMd: 12
+                        }
+                    },
+                    {
+                        prop: 'birthday',
+                        label: '生日',
+                        table: false,
+                        form: {is: 'el-date-picker', type: 'date', format: 'yyyy-MM-dd', valueFormat: 'yyyy-MM-dd',colMd: 12},
+                    },
+                    {
+                        prop: 'describe',
+                        label: '签名',
+                        table: false,
+                        form: {type: 'textarea'},
+                    },
+                    {
+                        prop: 'status',
+                        label: '账号状态',
+                        table: {is: 'el-switch2'},
+                        form: {is: 'el-switch', default: 1},
+                    },
+                    {
+                        prop: 'balance_status',
+                            label: '资金状态',
+                        table: {is: 'el-switch2'},
+                        form: {is: 'el-switch', default: 1},
+                    },
+                    {
+                        prop: 'create_time',
+                        label: '注册时间',
+                        table:{label: '注册&登录时间',sort: true, bind: ['login_time'], width: '160px'},
+                        form: false,
+                    },
+                ],
+            }
+        },
+        methods:{
+            closeForm(){
+                this.dialogVisible = false
+                this.resetForm();
+            },
+            handleClose(done) {
+                this.resetForm();
+                done();
+            },
+            showEditBalance(id){
+                this.cptlog = "/game_admin/capitalFlow/index?uid="+id;
+                this.operation_id = id
+                this.dialogVisible = true;
+            },
+            resetForm(){
+                this.form = {
+                    money_type: "1",
+                    type: "",
+                    amount:0,
+                };
+                this.type = "";
+                this.operation_id = 0;
+            },
+            onSubmit() {
+                self = this;
+                self.$refs.el_curd.loading = true;
+                this.form.id = this.operation_id;
+                request.post("user/editMoney",this.form,function (res){
+                    if (res.status === 'success') {
+                        self.$notify({
+                            title: '成功',
+                            message: '操作成功',
+                            type: 'success'
+                        });
+                        self.$refs.el_curd.$emit('edit-data', res.message);
+                        self.$refs.el_curd.refreshData();
+                    } else {
+                        self.$notify({showClose: true, message: res.message, type: res.status});
+                    }
+                    self.$refs.el_curd.loading = false;
+                    self.dialogVisible  =false;
+                    self.resetForm();
+                })
+            },
+            chooseMoneyType(e){
+                this.type = "";
+            }
+
+        },
+    })
+</script>
+</body>
+</html>

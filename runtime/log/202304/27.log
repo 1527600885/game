@@ -1,0 +1,5 @@
+{"time":"2023-04-27 13:44:04","type":"error","msg":"[0]Argument 2 passed to think\\response\\View::__construct() must be an instance of think\\View, instance of onekey\\ThinkView given"}
+{"time":"2023-04-27 13:49:14","type":"error","msg":"[0]Argument 2 passed to think\\response\\View::__construct() must be an instance of think\\View, instance of onekey\\ThinkView given"}
+{"time":"2023-04-27 13:50:46","type":"error","msg":"[0]Argument 2 passed to think\\response\\View::__construct() must be an instance of think\\View, instance of onekey\\ThinkView given"}
+{"time":"2023-04-27 13:54:36","type":"error","msg":"[0]Argument 2 passed to think\\response\\View::__construct() must be an instance of think\\View, instance of onekey\\ThinkView given"}
+{"time":"2023-04-27 14:00:54","type":"error","msg":"[10501]SQLSTATE[42S02]: Base table or view not found: 1146 Table 'game.mk_ungcoin_flow' doesn't exist"}

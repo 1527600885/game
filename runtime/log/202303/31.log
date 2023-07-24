@@ -1,0 +1,4 @@
+{"time":"2023-03-31 17:07:12","type":"error","msg":"[10501]SQLSTATE[HY000] [1045] Access denied for user 'im_unggame_com'@'localhost' (using password: YES)"}
+{"time":"2023-03-31 17:07:45","type":"error","msg":"[10500]not support data:(awards-bet)"}
+{"time":"2023-03-31 17:10:08","type":"error","msg":"[2]Division by zero"}
+{"time":"2023-03-31 17:28:33","type":"error","msg":"[0]Argument 1 passed to think\\Model::setAttr() must be of the type string, int given, called in E:\\project\\unggame\\vendor\\topthink\\think-orm\\src\\model\\concern\\Attribute.php on line 356"}
