@@ -30,9 +30,7 @@ class Player  extends BaseController
 
      function notFound()
     {
-        //$id=GamelogModel::insertGetId(['uid'=>1,'gid'=>11,'amount'=>11.777,'add_time'=>time(),'mtcode'=>3535,'type'=>9]);
 
-        //return $id;die();
         return json(["data" => null, "status" => ["code"=>"1002","message"=>"Success","datetime"=>date('Y-m-d H:i:s')]]);
     }
 
